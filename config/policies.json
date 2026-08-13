@@ -118,6 +118,15 @@
       },
       "name": "galileo-tracing-v2-inbound",
       "policyType": "galileo-tracing-v2-inbound"
-    }
-  ]
+    },
+    {
+  "handler": {
+    "export": "default",
+    "module": "$import(./modules/force-non-streaming)",
+    "options": {}
+  },
+  "name": "force-non-streaming",
+  "policyType": "custom-code-inbound"
+}
+ ]
 }
